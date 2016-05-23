@@ -1,0 +1,6 @@
+a {
+  color: $zt-primary-color;
+  &:hover, &:focus {
+    color: $zt-secondary-color;
+  }
+}

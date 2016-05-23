@@ -1,0 +1,68 @@
+// Basic Colors
+$navy: #1ab394;       // Primary color
+$dark-gray: #c2c2c2;  // Default color
+$blue: #1c84c6;       // Success color
+$lazur: #23c6c8;      // Info color
+$yellow: #f8ac59;     // Warrning color
+$red: #ED5565;        // Danger color
+
+// Various colors
+$text-color: #676a6c;   // Body text
+$gray: #f3f3f4;         // Background wrapper color
+$light-gray: #D1DADE;   // Default label, badget
+$label-badget-color: #5E5E5E;
+$light-blue:#f3f6fb;
+
+// Spiner color and margin
+$spin-color: $navy;
+$spin-margin: 0 auto;
+
+
+// IBOX colors ( default panel colors)
+$border-color: #e7eaec;     // IBox border
+$ibox-title-bg:#ffffff;     // IBox Background header
+$ibox-content-bg:#ffffff;   // IBox Background content
+
+//Sidebar width
+$sidebar-width: 220px;
+
+// Boxed layout width
+$boxed-width: 1200px;
+$boxed-backgound: url('patterns/shattered.png');
+
+//Border radius for buttons
+$btn-border-radius: 3px;
+
+//Navigation
+$nav-bg: #2F4050;
+//$nav-profil-pattern: url("patterns/header-profile.png") no-repeat;
+$nav-text-color: #a7b1c2;
+
+//avatar
+$avatar-xxs-size: 19.4px;
+$avatar-xs-size: 24px;
+$avatar-sm-size: 32px;
+$avatar-md-size: 40px;
+$avatar-lg-size: 60px;
+
+$avatar-border-radius: 50%;
+$avatar-border-color: black;
+$avatar-border-width: 1px;
+
+//text
+$text-size-1: 30px;
+$text-size-2: 24px;
+$text-size-3: 16px;
+$text-size-4: 14px;
+$text-size-5: 12px;
+$text-size-6: 10px;
+
+//heading
+$heading-color: #676a6c;
+$heading-weight: 600;
+
+$default-heading-size: $text-size-4;
+$default-heading-color: #676a6c;
+$default-heading-weight: $heading-weight;
+
+$input-size-placeholder: 14px

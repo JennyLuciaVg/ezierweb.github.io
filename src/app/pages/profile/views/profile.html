@@ -1,0 +1,410 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-8">
+        <h2 class="page-heading">PROFILE</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="">Home</a>
+            </li>
+
+            <li class="active">
+                <strong>Profile</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight no-padding-bottom">
+    <div class="row">
+        <div class="relative col-md-1">
+            <div class="second-one">
+                <img  class="image zt avatar avatar-lg avatar-border" src="assets/images/avatars/a4.jpg"> </div>
+            <div class="first-one">
+                <img class="zt avatar avatar-xxs avatar-border blue-main" src="assets/images/icons/icon-camera.svg"> </div>
+        </div>
+        <div class="col-md-9">
+            <p class="header2">Douglas Coppenland</p>
+            <p class="zt label label-blue">
+                STARTER
+            </p>
+        </div>
+
+        <div class="col-md-2">
+            <table class="">
+                <tbody>
+                <tr>
+                    <td class="col-md-10">
+                        <span class="item-note">SCORE:</span>
+                    </td>
+                    <td class="col-md-2">
+                        <span class="item text-capitalize"><strong>7.5</strong></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-10">
+                        <span class="item-note">FEEDBACK:</span>
+                    </td>
+                    <td class="col-md-2">
+                        <div class="font-yellow">★★★</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-10">
+                        <span class="item-note">POINTS:</span>
+                    </td>
+                    <td class="col-md-2">
+                        <span class="item text-capitalize"><strong>122</strong></span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- INFO -->
+<div ng-show="profile.info == true">
+    <div class="wrapper wrapper-content animated fadeInRight no-padding-bottom">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="zt tabs">
+                    <div class="tab active text-center">
+                        <div class="m-t" ng-click="showInfo()">
+                            <img src="assets/images/icons/icon-request-on.svg">
+                            <span class="sub header">Info</span>
+                        </div>
+                    </div>
+                    <div class="tab text-center">
+                        <div class="m-t" ng-click="">
+                            <img src="assets/images/icons/icon-quote-off.svg">
+                            <span>Scores</span>
+                        </div>
+                    </div>
+                    <div class="tab text-center">
+                        <div class="m-t">
+                            <img src="assets/images/icons/icon-messages-off.svg">
+                            <span>Feedback</span>
+                        </div>
+                    </div>
+                    <div class="tab text-center">
+                        <div class="m-t" ng-click="showInterests()">
+                            <img src="assets/images/icons/icon-interests-off.svg">
+                            <span>Interests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="3" class="title">Account Information</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">FIRST NAME</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <input type="text" placeholder="Name" class="no-borders item-input full-width">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">SECOND NAME</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <input type="text" placeholder="Second Name" class="no-borders item-input full-width">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">EMAIL</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <span class="item">dcoppeland@gmail.com</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">PASSWORD</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <span class="item">*************</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">ACCOUNT ID</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <span class="item">
+                                        AXOWE223ASF4579</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6 p-t-8 p-b-7">
+                                        <span class="item-note">PROVIDER PROFILE</span>
+                                    </td>
+                                    <td class="col-md-6 p-t-8 p-b-7" colspan="2">
+                                        <img src="assets/images/icons/switch-on.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">SUBSCRIPTION</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="item">Gold Member</span>
+                                    </td>
+                                    <td class="col-md-1 text-right">
+                                        <span class="sub header text-capitalize"><img src="assets/images/icons/arrow-down-mini-copy-3.svg"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6 no-border-bottom">
+                                        <span class="item-note">ABOUT ME</span>
+                                    </td>
+                                    <td class="col-md-6 no-border-bottom" colspan="2">
+                                        <textarea class="no-borders full-width"></textarea>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="3" class="title">Contact Information</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">COUNTRY</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="item text-capitalize">United States of America</span>
+                                    </td>
+                                    <td class="col-md-1 text-right">
+                                        <span class="sub header text-capitalize"><img src="assets/images/icons/arrow-down-mini-copy-3.svg"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">ADDRESS</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <input type="text" placeholder="Address" class="no-borders item-input full-width"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">APT/SUITE</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <input ng-model="number" name="number" payments-format="card"
+                                               placeholder="Apt/Suite" type="text" class="no-borders item-input full-width"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">ZIP CODE</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <input ng-model="number" name="number" payments-format="card"
+                                               placeholder="Zip Code" type="text" class="no-borders item-input full-width"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">CITY</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <input type="text" placeholder="City" class="no-borders item-input full-width"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">STATE/REGION</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <input type="text" placeholder="State/Region" class="no-borders item-input full-width"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">PHONE</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <input type="text" placeholder="Phone" class="no-borders item-input full-width"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                        <span class="item-note">ADDITIONAL PHONE</span>
+                                    </td>
+                                    <td class="col-md-6" colspan="2">
+                                        <input type="text" placeholder="Additional Phone" class="no-borders item-input full-width"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6 no-border-bottom">
+                                        <span class="item-note">WEBSITE</span>
+                                    </td>
+                                    <td class="col-md-6 no-border-bottom" colspan="2">
+                                        <input type="url" placeholder="Website" class="no-borders item-input full-width"/>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div></div></div>
+
+<!-- INTEREST -->
+<div ng-show="profile.interests == true">
+    <div class="wrapper wrapper-content animated fadeInRight no-padding-bottom">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="zt tabs">
+                    <div class="tab text-center">
+                        <div class="m-t" ng-click="showInfo()">
+                            <img src="assets/images/icons/icon-request-off.svg">
+                            <span class="">Info</span>
+                        </div>
+                    </div>
+                    <div class="tab text-center">
+                        <div class="m-t" ng-click="">
+                            <img src="assets/images/icons/icon-quote-off.svg">
+                            <span>Scores</span>
+                        </div>
+                    </div>
+                    <div class="tab text-center">
+                        <div class="m-t">
+                            <img src="assets/images/icons/icon-messages-off.svg">
+                            <span>Feedback</span>
+                        </div>
+                    </div>
+                    <div class="tab active text-center">
+                        <div class="m-t" ng-click="showInterests()">
+                            <img src="assets/images/icons/icon-interests-on.svg">
+                            <span>Interests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="3" class="title">Choose your services</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td colspan="3" class="no-border-bottom">
+                                        <div class="formsFloat rectangle-s text-center">
+                                            <span class="options">Home</span>
+                                        </div>
+                                        <div>
+                                            <span class="formsFloat options2">&nbsp;&nbsp;&nbsp;&nbsp;Health</span>
+                                        </div>
+                                        <div>
+                                            <span class="formsFloat options2">&nbsp;&nbsp;&nbsp;&nbsp;Car</span>
+                                        </div>
+                                        <div>
+                                            <span class="formsFloat options2">&nbsp;&nbsp;&nbsp;&nbsp;Entertainment</span>
+                                        </div>
+                                        <div>
+                                            <span class="formsFloat options2">&nbsp;&nbsp;&nbsp;&nbsp;Personal</span>
+                                        </div>
+                                        <div class=clear">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-1 p-t-xxs">
+                                        <img alt="image" class="" src="assets/images/icons/check-off.svg">
+                                    </td>
+                                    <td class="col-md-8">
+                                        <span class="item">People</span>
+                                    </td>
+                                    <td class="col-md-1 text-right">
+                                        <span class="sub header text-capitalize"><img src="assets/images/icons/arrow-down-mini-copy-3.svg"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-1">
+                                        <img alt="image" class="" src="assets/images/icons/check-off.svg">
+                                    </td>
+                                    <td class="col-md-8">
+                                        <span class="item">Maid</span>
+                                    </td>
+                                    <td class="col-md-1 text-right">
+                                        <span class="sub header text-capitalize"><img src="assets/images/icons/arrow-down-mini-copy-3.svg"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-1">
+                                        <img alt="image" class="" src="assets/images/icons/check-on-mini.svg">
+                                    </td>
+                                    <td class="col-md-12" colspan="2">
+                                        <span class="item m-l-md">Baby Sitter</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-1">
+                                        <img alt="image" class="" src="assets/images/icons/check-off.svg">
+                                    </td>
+                                    <td class="col-md-8">
+                                        <span class="item">Cleaning</span>
+                                    <td class="col-md-5 text-right">
+                                        <span class="sub header text-capitalize"><img src="assets/images/icons/arrow-down-mini-copy-3.svg"></span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Selected services</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item">Baby Sitter</span>
+                                    </td>
+                                    <td class="col-md-5 text-right">
+                                        <img alt="image" class="m-r" src="assets/images/icons/icon-delete.svg">
+                                        <img alt="image" class="" src="assets/images/icons/icon-more.svg">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item">Garden Decoration</span>
+                                    </td>
+                                    <td class="col-md-5 text-right">
+                                        <img alt="image" class="m-r" src="assets/images/icons/icon-delete.svg">
+                                        <img alt="image" class="" src="assets/images/icons/icon-more.svg">
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div></div></div>

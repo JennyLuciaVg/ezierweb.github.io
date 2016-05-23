@@ -1,0 +1,13 @@
+.zt.search > input {
+  border-radius: 0;
+  height: 32px;
+  @include zt-placeholder(12px);
+  padding-left: 10px;
+  border: 1px solid #eee;
+}
+
+.zt.search .btn {
+  border-radius: 0;
+  padding: 1px 2px;
+  font-size: 20px;
+}

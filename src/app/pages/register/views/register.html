@@ -1,0 +1,60 @@
+<div id="register">
+    <div class="top">
+        <img src="assets/images/ezier-logo-large.png" alt="Ezier service marketplace">
+        <p>
+            The Marketplace that promotes service
+            excellence through credibility and reputation
+            between customers and providers
+        </p>
+    </div>
+    <form class="form-horizontal" ng-submit="ctrl.submit(ctrl.user)">
+        <div class="form-group">
+                <label class="control-label col-sm-4">Email</label>
+            <div class="col-sm-8">
+                <input type="email" class="form-control" ng-model="ctrl.user.email">
+            </div>
+        </div>
+        <hr>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label class="control-label">Password</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="password" class="form-control" ng-model="ctrl.user.password">
+            </div>
+        </div>
+        <hr>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label class="control-label">Confirm Password</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="password" class="form-control" ng-model="ctrl.user.password">
+            </div>
+        </div>
+        <hr>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label class="control-label" ng-class="{'inactive': ctrl.user.account_type_id != 1}">Personal Account</label>
+            </div>
+            <div class="col-sm-4">
+                <input type="hidden" ng-model="ctrl.user.account_type_id" switcher-account>
+            </div>
+            <div class="col-sm-4">
+                <label class="control-label" ng-class="{'inactive': ctrl.user.account_type_id != 2}">Business Account</label>
+            </div>
+        </div>
+        <p>
+            <button type="submit" class="btn btn-primary">
+            Sign up <img src="assets/images/icons/icon-save.svg">
+            </button>
+        </p>
+    </form>
+    <div class="bottom">
+        <p class="text-center">Or Log in using <a>Facebook</a></p>
+        <div class="row">
+            <p class="col-md-5"><a ui-sref="password-email">Forgot password?</a></p>
+            <p class="col-md-7">Already have an account? <a ui-sref="login">Sign in</a></p>
+        </div>
+    </div>
+</div>

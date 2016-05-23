@@ -1,0 +1,242 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-12">
+        <h2 class="page-heading">Settings</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li class="active">
+                <strong>Settings</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="zt tabs">
+                <div class="tab text-center">
+                    <div class="m-t">
+                        <img src="assets/images/icons/icon-general-off.svg">
+                        <span>General</span>
+                    </div>
+                </div>
+                <div class="tab text-center">
+                    <div class="m-t">
+                        <img src="assets/images/icons/icon-notifications-on.svg">
+                        <span>Notifications</span>
+                    </div>
+                </div>
+                <div class="tab text-center">
+                    <div class="m-t">
+                        <img src="assets/images/icons/icon-privacy-on.svg">
+                        <span>Privacy</span>
+                    </div>
+                </div>
+                <div class="tab active text-center" ng-click="cancelCard()">
+                    <div class="m-t">
+                        <img src="assets/images/icons/icon-payment-on.svg">
+                        <span>Payment</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ibox-content" ng-show="views.payment">
+                <div>
+                    <table class="zt table table-list issue-tracker">
+                        <tbody>
+                        <tr ng-repeat="card in cards">
+                            <td class="col-md-1">
+                                <span class="zt label label-blue" ng-if="card.is_default == 1">DEFAULT</span>
+                            </td>
+                            <td class="col-md-1 text-center">
+                                <img alt="image" class="" ng-if="card.card_type.id == 1" src="assets/images/icons/logo-visa.png">
+                                <img alt="image" class="" ng-if="card.card_type.id != 1" src="assets/images/icons/logo-credit-card-generic.png">
+                            </td>
+                            <td class="col-md-10">
+                                <a href="#" class="header">
+                                    {{ card.card_type.name }}
+                                </a>
+                                <span class="sub header">
+                                    {{ card.card_number }}
+                                </span>
+                            </td>
+                            <td class="text-right col-md-1">
+                                <div class="dropdown right" dropdown>
+                                    <a class="zt show-more" dropdown-toggle>
+                                        <i class="ezier-icon-more"></i>
+                                    </a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li>
+                                        <li><a href="#">Option 3</a></li>
+                                        <li><a href="#">Option 4</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <!--<tr>
+                            <td class="col-md-1">
+                                <span class="zt label label-blue">DEFAULT</span>
+                            </td>
+                            <td class="col-md-1 text-center">
+                                <img alt="image" class="" src="assets/images/icons/logo-credit-card-generic.png">
+                            </td>
+                            <td class="col-md-10">
+                                <a href="#" class="header">
+                                    Generic Credit Card
+                                </a>
+                                <span class="sub header">
+                                    *** *** **** 9089
+                                </span>
+                            </td>
+                            <td class="text-right col-md-1">
+                                <div class="dropdown right" dropdown>
+                                    <a class="zt show-more" dropdown-toggle>
+                                        <i class="ezier-icon-more"></i>
+                                    </a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li>
+                                        <li><a href="#">Option 3</a></li>
+                                        <li><a href="#">Option 4</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="zt label label-blue">DEFAULT</span>
+                            </td>
+                            <td class="text-center">
+                                <img alt="image" class="" src="assets/images/icons/logo-paypal.png">
+                            </td>
+                            <td>
+                                <a href="#" class="header">
+                                    PayPal
+                                </a>
+
+                                <span class="sub header">
+                                    staceymoore@gmail.com
+                                </span>
+                            </td>
+                            <td class="text-right">
+                                <div class="dropdown right" dropdown>
+                                    <a class="zt show-more" dropdown-toggle>
+                                        <i class="ezier-icon-more"></i>
+                                    </a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li>
+                                        <li><a href="#">Option 3</a></li>
+                                        <li><a href="#">Option 4</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-center">
+                    <a class="" ng-click="showAddCard()">
+                        <img src="assets/images/icons/icon-add.svg">
+                    </a>
+                </div>
+            </div>
+
+            <div class="ibox-content" ng-show="views.addCard">
+                <form name="checkoutForm" stripe-form="stripeCallback">
+                    <div class="col-md-6 p-w-xs">
+                        <table class="zt table table-table issue-tracker">
+                            <thead>
+                            <tr>
+                                <td colspan="2" class="title">Payment Type</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-1 p-t-xxs">
+                                    <img alt="image" class="" src="assets/images/icons/icon-radio-on.svg">
+                                </td>
+                                <td class="col-md-8" style="padding: 3px 0;">
+                                    <img alt="image" class="card-img" src="assets/images/icons/logo-mastercard.png">
+                                    <img alt="image" class="card-img" src="assets/images/icons/logo-visa.png">
+                                    <img alt="image" class="card-img" src="assets/images/icons/logo-amex.png">
+                                    <img alt="image" class="card-img" src="assets/images/icons/logo-discover.png">
+                                    <img alt="image" class="card-img" src="assets/images/icons/logo-credit-card-generic.png">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-1">
+                                    <img alt="image" class="" src="assets/images/icons/check-off.svg">
+                                </td>
+                                <td class="col-md-8" style="padding: 9px 0;">
+                                    <img alt="image" class="" src="assets/images/icons/logo-paypal.png">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 p-w-xs">
+                        <table class="zt table table-table issue-tracker">
+                            <thead>
+                            <tr>
+                                <td colspan="2" class="title">Credit Card Information</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-class="{error_card: checkoutForm.number.$invalid}">
+                                <td class="col-md-5">
+                                    <span class="item-note">NUMBER</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <input ng-model="number" name="number" payments-format="card" payments-validate="card"
+                                           placeholder="Card Number" type="text" class="no-borders"/>
+                                </td>
+                            </tr>
+                            <tr ng-class="{error_card: checkoutForm.expiry.$invalid}">
+                                <td class="col-md-5">
+                                    <span class="item-note">EXPIRATION DATE</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <input ng-model="expiry" name="expiry" payments-format="expiry" payments-validate="expiry"
+                                           placeholder="Date Expiry" type="text" class="no-borders"/>
+                                </td>
+                            </tr>
+                            <tr ng-class="{error_card: checkoutForm.cvc.$invalid}">
+                                <td class="col-md-5">
+                                    <span class="item-note">CVC</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <input ng-model="cvc" name="cvc" payments-format="cvc" payments-validate="cvc"
+                                           placeholder="CVC" type="text" class="no-borders"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-5">
+                                    <span class="item-note">CARDHOLDER NAME</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <input ng-model="name" type="text" placeholder="Name" class="no-borders"/>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center">
+                        <a class="btn btn-primary m-t-md m-r-xl" ng-click="cancelCard()">
+                            Cancel <img class="m-l-xs" src="assets/images/icons/icon-cancel.svg" alt="">
+                        </a>
+                        <a class="btn btn-primary m-t-md m-r-xl">
+                            Delete <img class="m-l-xs" src="assets/images/icons/icon-delete-2.svg" alt="">
+                        </a>
+                        <button type="submit" class="btn btn-primary m-t-md"
+                                ng-disabled="checkoutForm.$invalid || number == null || expiry == null || cvc == null || name == null">
+                            Save <img class="m-l-xs" src="assets/images/icons/icon-save.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

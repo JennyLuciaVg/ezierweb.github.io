@@ -1,0 +1,21 @@
+.footer {
+  padding: 4px 0;
+  font-size: 10px;
+
+  .footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    position: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 4px 25px;
+  }
+}

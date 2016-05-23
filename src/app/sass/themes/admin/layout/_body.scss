@@ -1,0 +1,12 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  &.boxed-layout {
+    background: $zt-primary-color;
+    @include gradient-vertical($start-color:  darken($zt-primary-color, 12%), $end-color: $zt-primary-color);
+  }
+}
+
+body.security {
+  @include gradient-vertical($start-color:  darken($zt-primary-color, 12%), $end-color: $zt-primary-color);
+  background: url("../assets/images/backgrounds/background-security.png") $zt-primary-color;
+}

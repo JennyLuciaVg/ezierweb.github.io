@@ -1,0 +1,10 @@
+.zt.avatar {
+  @extend %avatar;
+
+  &-dropdown {
+    //@include avatar(35px, 50%, 1px, #00afb5);
+    margin: -8px 3px 0 0;
+    width: 35px;
+    height: 35px;
+  }
+}

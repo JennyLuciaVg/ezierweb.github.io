@@ -1,0 +1,82 @@
+/*******************************
+            heading
+*******************************/
+
+.zt.heading {
+  > img {
+    display: inline-block;
+    margin-top: .14285em;
+    width: 2.5em;
+    height: auto;
+    vertical-align: middle;
+    + .content {
+      padding-left: .75rem;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+}
+
+/*******************************
+            Types
+*******************************/
+
+
+/*--------------
+     Header
+---------------*/
+
+h1.zt.heading {
+  font-size: $text-size-1;
+}
+h2.zt.heading {
+  font-size: $text-size-2;
+}
+h3.zt.heading {
+  font-size: $text-size-3;
+}
+h4.zt.heading {
+  font-size: $text-size-4;
+}
+h5.zt.heading {
+  font-size: $text-size-5;
+}
+
+/*-------------------
+       Colors
+--------------------*/
+
+/*--- Primary ---*/
+.zt.primary.heading {
+  color: $zt-primary-color;
+}
+
+/*--- Yellow ---*/
+.zt.yellow.heading {
+  color: $zt-yellow;
+}
+
+/*--- Gray ---*/
+.zt.gray.heading {
+  color: $zt-gray;
+}
+
+/*--- Orange ---*/
+.zt.orange.heading {
+  color: $zt-orange;
+}
+
+/*--- Blue ---*/
+.zt.blue.heading {
+  color: $zt-blue;
+}
+
+/*--- Red ---*/
+.zt.red.heading {
+  color: $zt-red;
+}
+
+/*--- Green ---*/
+.zt.green.heading {
+  color: $zt-green;
+}

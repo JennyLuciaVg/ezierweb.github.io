@@ -1,0 +1,689 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-8">
+        <h2 class="page-heading">View Request</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li class="">
+                <a href="">Requests & Quotes</a>
+            </li>
+            <li class="active">
+                <strong>View Request</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight no-padding-bottom">
+    <div class="row">
+        <div class="col-md-1">
+            <img alt="image" class="zt avatar avatar-lg avatar-border" src="assets/images/avatars/a4.jpg">
+        </div>
+        <div class="col-md-7">
+            <span class="header2">New Fence</span>
+            <p class="sub header text-uppercase">
+                Susan Sarandon
+            </p>
+        </div>
+        <div class="col-md-4 text-right">
+            <p><img src="assets/images/icons/icon-phone.svg">
+                <img src="assets/images/icons/icon-event.svg"></p>
+            <p><strong>1 hour left <span class="zt label label-yellow m-l-sm">PENDING QUOTE</span></strong></p>
+        </div>
+    </div>
+</div>
+
+<!-- VIEW REQUEST -->
+<div ng-show="request.viewRequest == true">
+<div class="wrapper wrapper-content animated fadeInRight no-padding-bottom">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="zt tabs">
+                <div class="tab active text-center">
+                    <div class="m-t" ng-click="showView()">
+                        <img src="assets/images/icons/icon-request-on.svg">
+                        <span class="sub header"><strong>View Request</strong></span>
+                    </div>
+                </div>
+                <div class="tab text-center">
+                    <div class="m-t" ng-click="showQuote()">
+                        <img src="assets/images/icons/icon-quote-off.svg">
+                        <span>Quote</span>
+                    </div>
+                </div>
+                <div class="tab text-center">
+                    <div class="m-t" ng-click="showMessages()">
+                        <img src="assets/images/icons/icon-messages-off.svg">
+                        <span>Messages</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ibox-content">
+                <div>
+                    <p class="header1">Overview</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <table class="zt table table-table issue-tracker">
+                            <thead>
+                            <tr>
+                                <td colspan="2" class="title">Main Info</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-5">
+                                    <span class="item-note">DEAD LINE</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <span class="item text-capitalize">3 Days</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-5">
+                                    <span class="item-note">AMOUNT REQUIRED</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <span class="item text-capitalize">Yes</span>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+                        <table class="zt table table-table issue-tracker">
+                            <thead>
+                            <tr>
+                                <td colspan="2" class="title">Details</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-5">
+                                    <span class="item-note">GREEN SERVICE</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <span class="item text-capitalize">Yes</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-5">
+                                    <span class="item-note">WARRANTY</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <span class="item text-capitalize">1 year</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-5">
+                                    <span class="item-note">BRANDS</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <span class="item text-capitalize">4</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-5">
+                                    <span class="item-note">MAX. EXECUTION TIME</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <span class="item text-capitalize">1 month</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-5">
+                                    <span class="item-note">DECISION</span>
+                                </td>
+                                <td class="col-md-5">
+                                    <span class="item text-uppercase">asap</span>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <p class="header1">Notes</p>
+                    <p class="blacktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Maecenas et auctor ex. Duis at aliquam lectus, vitae rutrum lorem.
+                        Vivamus a tortor aliquam, finibus nisi nec, imperdiet dolor.
+                        Fusce condimentum nulla eget tortor tincidunt ultrices.
+                        Nullam rutrum condimentum nibh id tristique.
+                        Duis eu massa facilisis nisl faucibus faucibus.</p>
+                </div>
+                <div>
+                    <p class="header1">Attachments</p>
+                    <div class="zt tabs">
+                        <div class="tab active text-center">
+                            <div class="m-t">
+                                <img src="assets/images/avatars/a4.jpg" class="image"><br>
+                                <span class="blacktext-s">Photo of my garden</span>
+                            </div>
+
+                        </div>
+                        <div class="tab text-center">
+                            <div class="m-t">
+                                <img src="assets/images/avatars/a4.jpg" class="image"><br>
+                                <span class="blacktext-s">Another photo of...</span>
+                            </div>
+                        </div>
+                        <div class="tab text-center">
+                            <div class="m-t">
+                                <img src="assets/images/icons/icon-pdf.svg" class="image1"><br>
+                                <span class="blacktext-s">Map and planning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</div></div></div>
+
+<!-- QUOTE -->
+<div ng-show="request.quote == true">
+    <div class="wrapper wrapper-content animated fadeInRight no-padding-bottom">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="zt tabs">
+                    <div class="tab text-center">
+                        <div class="m-t" ng-click="showView()">
+                            <img src="assets/images/icons/icon-request-off.svg">
+                            <span>View Request</span>
+                        </div>
+                    </div>
+                    <div class="tab active text-center">
+                        <div class="m-t" ng-click="showQuote()">
+                            <img src="assets/images/icons/icon-quote-on.svg">
+                            <span class="sub header"><strong>Quote</strong></span>
+                        </div>
+                    </div>
+                    <div class="tab text-center">
+                        <div class="m-t" ng-click="showMessages()">
+                            <img src="assets/images/icons/icon-messages-off.svg">
+                            <span>Messages</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DETAILS -->
+                <div class="ibox-content" ng-show="views.details == true">
+                    <div class="forms col-md-12">
+                        <div class="formsFloat circleBase circle1 text-center steps">1<p class="steps2 m-l-n-sm">DETAILS</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle2 text-center steps1">2<p class="steps2 m-l-n-xs">NOTES</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle2 text-center steps1">3<p class="steps2 m-l-n-md">ATTACHMENTS</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle2 text-center steps1">4<p class="steps2 m-l-n-sm">PAYMENT</p></div>
+                        <div class="filter-dropdown right dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" dropdown-toggle aria-expanded=true>
+                                Quote Version 1 <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class=clear">
+                    </div>
+                    <div class="m-t-xl"><p class="header1 ">Step 1: Details</p></div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+
+                                <tbody>
+
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">GREEN SERVICE</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="sub header text-capitalize"><img src="assets/images/icons/switch-off.svg"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">WARRANTY</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="text-capitalize item">1 year</span>
+                                    </td>
+                                    <td class="text-right col-md-1">
+                                        <div class="dropdown right" dropdown>
+                                            <a class="zt show-more" dropdown-toggle>
+                                                <i class="ezier-icon-more"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">BRANDS</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="text-capitalize item">4</span>
+                                    </td>
+                                    <td class="text-right col-md-1">
+                                        <div class="dropdown right" dropdown>
+                                            <a class="zt show-more" dropdown-toggle>
+                                                <i class="ezier-icon-more"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">MAX. EXECUTION TIME</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="item">1 month</span>
+                                    </td>
+                                    <td class="text-right col-md-1">
+                                        <div class="dropdown right" dropdown>
+                                            <a class="zt show-more" dropdown-toggle>
+                                                <i class="ezier-icon-more"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a class="btn btn-primary m-t-md m-r-xl" ng-click="showNotes()">
+                            Next Step <img class="m-l-xs" src="assets/images/icons/icon-next.svg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- NOTES -->
+                <div class="ibox-content" ng-show="views.notes == true">
+
+                    <div class="forms col-md-12">
+                        <div class="formsFloat circleBase circle2 text-center steps steps-ready" ng-click="showDetails()">1<p class="steps2 steps-ready m-l-n-sm">DETAILS</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle1 text-center steps">2<p class="steps2 m-l-n-xs">NOTES</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle2 text-center steps1">3<p class="steps2 m-l-n-md">ATTACHMENTS</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle2 text-center steps1">4<p class="steps2 m-l-n-sm">PAYMENT</p></div>
+                        <div class="filter-dropdown right" dropdown>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" dropdown-toggle aria-expanded=true>
+                                Quote Version 1 <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                    <div class="m-t-xs">
+                        <p class="header1">Step 2: Notes</p>
+                        <p class="blacktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <a class="btn btn-primary m-t-md m-r-xl" ng-click="showAttachments()">
+                            Next Step <img class="m-l-xs" src="assets/images/icons/icon-next.svg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- ATTACHMENTS -->
+                <div class="ibox-content" ng-show="views.attachments == true">
+
+                    <div class="forms col-md-12">
+                        <div class="formsFloat circleBase circle2 text-center steps steps-ready" ng-click="showDetails()">1<p class="steps2 steps-ready m-l-n-sm">DETAILS</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle2 text-center steps steps-ready" ng-click="showNotes()">2<p class="steps2 steps-ready m-l-n-xs">NOTES</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle1 text-center steps">3<p class="steps2 m-l-n-md">ATTACHMENTS</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle2 text-center steps1">4<p class="steps2 m-l-n-sm">PAYMENT</p></div>
+                        <div class="filter-dropdown right" dropdown>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" dropdown-toggle aria-expanded=true>
+                                Quote Version 1 <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                    <div class="m-t-xs">
+                        <p class="header1">Step 3: Attachments</p>
+                        <div class="zt tabs">
+
+                            <div class="tab active text-center">
+                                <div class="m-t">
+                                    <img src="assets/images/avatars/a4.jpg" class="image"><br>
+                                    <span class="blacktext-s">Photo of my garden</span>
+                                </div>
+                            </div>
+
+                            <div class="tab active text-center">
+                                <div class="m-t">
+                                    <div class="rectangle m-l-md">
+                                        <img src="assets/images/avatars/a4.jpg" class="image" style="opacity: 0.2">
+                                        <img src="assets/images/icons/icon-delete.svg" class="img avatar-sm.zt.avatar m-t-n-xxxl">
+                                    </div>
+                                </div>
+
+                                <span class="blacktext-s">Another photo of...</span>
+                            </div>
+                            <div class="tab active text-center">
+                                <div class="m-t">
+                                    <img src="assets/images/icons/icon-pdf.svg" class="image1"><br>
+                                    <span class="blacktext-s">Map and planning</span>
+                                </div>
+                            </div>
+
+                            <div class="tab active text-center">
+                                <div class="m-t">
+                                    <img src="assets/images/icons/icon-add.svg" class="avatar-sm.zt.avatar m-b-md"><br>
+                                    <span class="blacktext-s steps-ready">Add attachment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a class="btn btn-primary m-t-md m-r-xl" ng-click="showPayment()">
+                            Next Step <img class="m-l-xs" src="assets/images/icons/icon-next.svg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- PAYMENT -->
+                <div class="ibox-content" ng-show="views.payment == true">
+                    <div class="forms col-md-12">
+                        <div class="formsFloat circleBase circle2 text-center steps steps-ready" ng-click="showDetails()">1<p class="steps2 steps-ready m-l-n-sm">DETAILS</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle2 text-center steps steps-ready" ng-click="showNotes()">2<p class="steps2 steps-ready m-l-n-xs">NOTES</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle2 text-center steps steps-ready" ng-click="showAttachments()">3<p class="steps2 steps-ready m-l-n-md">ATTACHMENTS</p></div>
+                        <div class="formsFloat line"></div>
+                        <div class="formsFloat circleBase circle1 text-center steps">4<p class="steps2 m-l-n-sm">PAYMENT</p></div>
+                        <div class="filter-dropdown right" dropdown>
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" dropdown-toggle aria-expanded=true>
+                                Quote Version 1 <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <p class="header1 m-t-xs">Step 4: Payment</p>
+
+                    <div class="row">
+                        <div class="col-md-6 p-w-xs">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Options</td>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr class="col-md-12">
+                                    <td class="col-md-4">
+                                        <span class="item-note">PAY WITH</span></td>
+                                    <td class="col-md-4">
+                                        <img alt="image" class="" src="assets/images/icons/icon-radio-on.svg">
+                                        <span class="item">Ezier</span>
+                                    </td>
+                                </tr>
+                                <tr class="col-md-12">
+                                    <td class="col-md-4">
+                                        <span class="item-note"></span></td>
+                                    <td class="col-md-4">
+                                        <img alt="image" class="" src="assets/images/icons/check-off.svg">
+                                        <span class="item">Cash</span>
+                                    </td>
+                                </tr>
+                                <tr class="col-md-12">
+                                    <td class="col-md-4">
+                                        <span class="item-note"></span></td>
+                                    <td class="col-md-4">
+                                        <img alt="image" class="" src="assets/images/icons/check-off.svg">
+                                        <span class="item">Both</span>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="col-md-6 p-w-xs">
+                            <table class="zt table table-table issue-tracker">
+
+                                <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Milestones</td>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-8">
+                                        <p class="item">1. Fix</p>
+                                        <p class="zt.table-list note m-t-n m-l">01/10/2016</p>
+                                    </td>
+                                    <td class="col-md-4">
+                                        <p class="sub.header m-l item text-right">$240</p>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="col-md-8">
+                                        <p class="sub.header item">2. Build</p>
+                                        <p class="zt.table-list note m-t-n m-l">01/20/2016</p>
+                                    </td>
+                                    <td class="col-md-4">
+                                        <p class="sub.header m-l item text-right">$115</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="col-md-12 text-center" colspan="2">
+                                        <img src="assets/images/icons/icon-add.svg" class="m-l-xl">
+
+                                    </td>
+                                </tr>
+
+
+                                <tr class="titletab">
+                                    <td class="col-md-8">
+                                        <p>Amount total</p>
+                                    </td>
+                                    <td class="col-md-4 text-right">
+                                        <p>$395</p>
+                                    </td>
+
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a class="btn btn-primary m-t-md m-r-xl">
+                            Cancel <img class="m-l-xs" src="assets/images/icons/icon-cancel.svg" alt="">
+                        </a>
+                        <a class="btn btn-primary m-t-md m-r-xl">
+                            Save as Draft <img class="m-l-xs" src="assets/images/icons/icon-draft.svg" alt="">
+                        </a>
+                        <button type="submit" class="btn btn-primary m-t-md">
+                            Send <img class="m-l-xs" src="assets/images/icons/icon-send.svg" alt="">
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MESSAGES -->
+<div ng-show="request.messages == true">
+    <div class="wrapper wrapper-content animated fadeInRight no-padding-bottom">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="zt tabs">
+                    <div class="tab text-center">
+                        <div class="m-t" ng-click="showView()">
+                            <img src="assets/images/icons/icon-request-off.svg">
+                            <span class="">View Request</span>
+                        </div>
+                    </div>
+                    <div class="tab text-center">
+                        <div class="m-t" ng-click="showQuote()">
+                            <img src="assets/images/icons/icon-quote-off.svg">
+                            <span>Quote</span>
+                        </div>
+                    </div>
+                    <div class="tab active text-center">
+                        <div class="m-t" ng-click="showMessages()">
+                            <img src="assets/images/icons/icon-messages-on.svg">
+                            <span>Messages</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="col-md-12 no-padding">
+                        <div class="col-md-8">
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="input-group zt search">
+                                <input type="text" placeholder="Search Messages" class="input form-control">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn btn-primary"><i class="ezier-icon-zoom"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="">
+                        <p class="options2 border-bottom m-t-xs">FRIDAY 01/15/2016</p></div>
+
+                    <div class="clear m-b-sm">
+                        <div class="col-md-1 no-padding">
+                        <img class="zt avatar avatar-md avatar-border" src="assets/images/avatars/a4.jpg">
+                        </div>
+                        <div class="col-md-10 no-padding">
+                            <span class="avatar-name no-padding">SUSAN SARANDON</span>
+                            <span class="options2 no-padding"> 11:25am </span>
+                            <div class="my-message-message-white">
+                                <span class="blacktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+                            </div>
+
+                        </div>
+                        <div class="col-md-1 no-padding">
+                        </div>
+                    </div>
+                    <div class="clear m-b-sm">
+                        <div class="col-md-1 no-padding"></div>
+                        <div class="col-md-10 no-padding">
+                            <div class="my-message-message">
+                                <span class="blacktext">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore
+                                    eu fugiat nulla pariatur.</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1 m-t-sm">
+                            <span class="avatar-name ">ME</span>
+                            <span class="options2"> 11:25am </span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="options2 border-bottom m-t-xs">TODAY</p>
+                    </div>
+
+                    <div class="clear m-b-sm">
+                        <div class="col-md-1 no-padding">
+
+                        </div>
+                        <div class="col-md-10 no-padding">
+                            <div class="my-message-message">
+                                <span class="blacktext">Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur.</span>
+                            </div>
+
+                        </div>
+                        <div class="col-md-1 m-t-lg">
+                            <span class="avatar-name">ME</span>
+                            <span class="options2"> 11:25am </span>
+                        </div>
+                    </div>
+
+                    <div class="clear">
+                        <div class="col-md-1 no-padding">
+                            <img class="zt avatar avatar-md avatar-border" src="assets/images/avatars/a4.jpg">
+                        </div>
+                        <div class="col-md-10 no-padding">
+                            <span class="avatar-name no-padding">SUSAN SARANDON</span>
+                            <span class="options2 no-padding"> 11:25am </span>
+                            <div class="my-message-message-white">
+                                <span class="blacktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+                            </div>
+
+                        </div>
+                        <div class="col-md-1 no-padding">
+                        </div>
+                    </div>
+                    <div class="input-group zt search p-t-16 p-b-16">
+                        <input type="text" placeholder="Type your message" class="input form-control ">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary">
+                                <img class="m-r-xs m-l-xs p-l-4 p-r-4" src="assets/images/icons/icon-send-message.svg">
+                            </button>
+                        </span>
+                    </div>
+
+                    </div>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

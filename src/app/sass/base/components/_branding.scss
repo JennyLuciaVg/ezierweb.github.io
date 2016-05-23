@@ -1,0 +1,16 @@
+.branding {
+  float: left;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 17px 20px;
+  text-align: center;
+  background-color: $navy;
+}
+
+
+body.mini-navbar {
+  .branding {
+    display: none;
+  }
+}

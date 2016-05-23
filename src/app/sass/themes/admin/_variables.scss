@@ -1,0 +1,200 @@
+//Theme colors
+$zt-primary-color: #00afb5;
+$zt-secondary-color: #004c4f;
+$zt-light-color: #3fd8dd;
+$zt-warning-color: #f5a623;
+
+
+//Base colors
+$zt-yellow: #f8e71c;
+$zt-gray: #b9b5b5;
+$zt-orange: #ed9a12;
+$zt-blue: #3fd8dd;
+$zt-light-blue: #6eeef2;
+$zt-red: #d0021b;
+$zt-green: #7ed321;
+$zt-black: #000000;
+$zt-light-gray: #d8d8d8;
+$zt-dark-gray: #9b9b9b;
+$zt-white: #eeeeee;
+
+$zt-label-text-dark-color: #4a4a4a;
+$zt-label-text-light-color: #ffffff;
+
+//overwrite default colors
+$navy: $zt-primary-color;
+
+//avatar-theme
+$avatar-border-color: $zt-primary-color;
+
+//
+$text-size-3: 20px;
+
+//Forms
+.circleBase {
+  width: 23.9px;
+  height: 23.9px;
+  border-radius: 50%;
+  }
+
+.circle1 {
+  background-color: $zt-primary-color;
+
+}
+.circle2 {
+  border: solid 1px $zt-primary-color;
+}
+.circle3 {
+  border: solid 1px $zt-light-gray;
+  background-color: #ffffff !important;
+}
+
+
+.forms {
+  width: 100%;
+}
+
+.formsFloat{
+  float: left;
+  text-align: center;
+  color: $zt-label-text-light-color;
+}
+
+.line {
+  width: 60px;
+  height: 1.7px;
+  background-color: $zt-primary-color;
+   margin-top: 10px;
+  }
+
+.line-lg {
+  width: 218px;
+  height: 2.8px;
+  background-color: $zt-light-gray;
+}
+
+.rectangle{
+     width: 90px;
+    height: 70px;
+    border: solid 1px $zt-primary-color;
+
+}
+
+.rectangle-s {
+  width: 54px;
+  height: 17px;
+  border-radius: 3px;
+  background-color: $zt-primary-color;
+}
+
+/* THE MESSAGE BUBBLE
+------------------- */
+
+/*BLUE*/
+.my-message-message:before {
+  border-left-color: #f6f6f6 ;
+}
+.my-message-message:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid;
+  color: #6EEEF2 ;
+}
+.my-message-message {
+  border: 1px solid #E6E6E6 ;
+  background: #6eeef2 ;
+  line-height: 1.2;
+  margin-left: 0;
+  white-space: normal;
+  border-radius:3px;
+  padding:10px;
+}
+
+/*WHITE*/
+.my-message-message-white:before {
+  border-right-color: $zt-light-gray ;
+}
+.my-message-message-white:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 10px solid;
+  color: $zt-light-gray ;
+}
+.my-message-message-white {
+  border: 1px solid $zt-light-gray ;
+  line-height: 1.2;
+  margin-right: 0;
+  white-space: normal;
+  border-radius:3px;
+  padding:10px;
+}
+/*------------------- */
+
+.rectangle-message1{
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+}
+.rectangle-message2{
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background-color: #6eeef2;
+  border: 1px solid #d8d8d8;
+}
+
+.triangle-message1a{
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right:12px solid #9b9b9b;
+  position: absolute;
+  left: -11px;
+  top: 28px;
+}
+.triangle-message1b{
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right:12px solid #ffffff;
+  position: absolute;
+  left: -10px;
+  top: 28px;
+}
+
+.triangle-message2a{
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 13px solid #9b9b9b;
+  position: absolute;
+  right: -12px;
+  top: 11px;
+}
+.triangle-message2b{
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #6eeef2;
+  position: absolute;
+  right: -11px;
+  top: 11px;
+}

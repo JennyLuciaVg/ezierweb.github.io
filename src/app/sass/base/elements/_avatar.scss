@@ -1,0 +1,29 @@
+/* AVATAR */
+%avatar {
+  border-radius: $avatar-border-radius;
+  @include square($avatar-md-size);
+
+  &.avatar-xxs {
+    @include square($avatar-xxs-size);
+  }
+
+  &.avatar-xs {
+    @include square($avatar-xs-size);
+  }
+
+  &.avatar-sm {
+    @include square($avatar-sm-size);
+  }
+
+  &.avatar-md {
+    @include square($avatar-md-size);
+  }
+
+  &.avatar-lg {
+    @include square($avatar-lg-size);
+  }
+
+  &.avatar-border {
+    border: $avatar-border-width solid $avatar-border-color;
+  }
+}

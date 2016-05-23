@@ -1,0 +1,86 @@
+/*******************************
+        Awesome Checkbox
+*******************************/
+
+/*--------------
+     Basic
+---------------*/
+
+.filter-dropdown {
+  position: relative;
+}
+
+.filter-dropdown button {
+  width: 100%;
+}
+
+ul.zt.dropdown-menu > li {
+
+  margin: 10px 15px;
+  border-bottom: 1px solid #eee;
+
+  > .checkbox, .radio {
+    label {
+      width: 100%;
+    }
+  }
+}
+
+/*--------------
+     Heading
+---------------*/
+
+ul.zt.dropdown-menu > li  > .heading {
+    font-size: 14px;
+    color: $zt-primary-color;
+}
+
+/*******************************
+          Variations
+*******************************/
+
+
+
+
+/*--------------
+     Primary
+---------------*/
+ul.zt.dropdown-menu > li {
+
+  > .checkbox, .radio {
+
+    &.checkbox-info {
+      input[type="checkbox"]:checked + label::before,
+      input[type="radio"]:checked + label::before
+      {
+        color: $zt-primary-color;
+      }
+    }
+  }
+}
+
+.open > .btn-primary.dropdown-toggle {
+  &:hover, &:focus {
+    color: #fff;
+    background-color: darken($zt-primary-color, 10%);
+    border-color: darken($zt-primary-color, 20%);
+  }
+}
+
+
+/*******************************
+          Medias
+*******************************/
+
+@media (min-width: 768px) {
+
+  .filter-dropdown.right{
+    float: right;
+    width: auto;
+  }
+
+  .filter-dropdown.right .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}

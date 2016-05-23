@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="22px" viewBox="0 0 38 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>switch-off</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.287624547 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Requests-&amp;-Quotes---Quote--Details" sketch:type="MSArtboardGroup" transform="translate(-557.000000, -434.000000)">
+            <g id="switch-off" sketch:type="MSLayerGroup" transform="translate(558.000000, 434.000000)">
+                <rect id="bg" fill="#F5F5F5" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="0" y="0" width="36.7346939" height="20" rx="80"></rect>
+                <ellipse id="knob" fill="#FFFFFF" filter="url(#filter-2)" sketch:type="MSShapeGroup" cx="10.2040816" cy="10.2040816" rx="8.36734694" ry="8.36734694"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

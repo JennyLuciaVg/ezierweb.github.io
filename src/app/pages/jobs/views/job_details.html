@@ -1,0 +1,545 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-8">
+        <h2 class="page-heading">Job Details</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li class="">
+                <a href="">Jobs</a>
+            </li>
+            <li class="active">
+                <strong>Job Details</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight no-padding-bottom">
+    <div class="row">
+        <div class="col-md-1">
+            <img alt="image" class="zt avatar avatar-lg avatar-border" src="assets/images/avatars/a4.jpg" width="60px" height="60px">
+        </div>
+        <div class="col-md-7">
+            <span class="header2">New Fence</span>
+            <p class="sub header text-uppercase">
+                Susan Sarandon
+            </p>
+        </div>
+        <div class="col-md-4 text-right">
+            <p><img src="assets/images/icons/icon-phone.svg">&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="assets/images/icons/icon-event.svg"><br></p>
+            <p><strong>18% &nbsp;&nbsp; <span class="zt label label-yellow">IN PROGRESS</span></strong></p>
+        </div>
+    </div>
+</div>
+
+<!-- VIEW JOB -->
+<div>
+    <div class="wrapper wrapper-content animated fadeInRight no-padding-bottom">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="zt tabs">
+                    <div class="tab text-center" ng-class="{active : currentView == 'viewJob'}" ng-click="changeView('viewJob')">
+                        <div class="m-t">
+                            <img ng-src="{{currentView == 'viewJob' && 'assets/images/icons/icon-request-on.svg' || 'assets/images/icons/icon-request-off.svg'}}">
+                            <span>View Jobs</span>
+                        </div>
+                    </div>
+                    <div class="tab text-center" ng-class="{active : currentView == 'claims'}" ng-click="">
+                        <div class="m-t">
+                            <img ng-src="{{currentView == 'claims' && 'assets/images/icons/icon-claims-on.svg' || 'assets/images/icons/icon-claims-off.svg'}}">
+                            <span>Claims</span>
+                        </div>
+                    </div>
+                    <div class="tab text-center" ng-class="{active : currentView == 'messages'}" ng-click="changeView('messages')">
+                        <div class="m-t">
+                            <img ng-src="{{currentView == 'messages' && 'assets/images/icons/icon-messages-on.svg' || 'assets/images/icons/icon-messages-off.svg'}}">
+                            <span>Messages</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIEW JOB -->
+                <div ng-show="currentView == 'viewJob'" class="ibox-content wrapper wrapper-content ">
+                    <div>
+                        <p class="header1">Overview</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="3" class="title">Main Info</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <span class="item-note">PROGRESS</span>
+                                    </td>
+                                    <td class="col-md-6">
+                                        <div>
+
+                                            <rzslider rz-slider-tpl-url="app/templates/custom-slider.html" rz-slider-model="slider.value" rz-slider-options="slider.options" class="m-t"></rzslider>
+
+                                        </div>
+                                    </td>
+                                    <td class="col-md-2">
+                                        <span class="item blacktext text-capitalize p-w-xs">{{slider.value}}%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <span class="item-note">START DATE</span>
+                                    </td>
+                                    <td class="col-md-6">
+                                        <span class="item text-capitalize">01/05/16</span>
+                                    </td>
+                                    <td class="col-md-2">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <span class="item-note">START DATE</span>
+                                    </td>
+                                    <td class="col-md-6">
+                                        <span class="item text-capitalize">02/28/16</span>
+                                    </td>
+                                    <td class="col-md-2">
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Details</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">GREEN SERVICE</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="item text-capitalize">Yes</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">WARRANTY</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="item text-capitalize">1 year</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">BRANDS</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="item text-capitalize">4</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">MAX. EXECUTION TIME</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="item text-capitalize">1 month</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">DECISION</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="item text-uppercase">asap</span>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="header1">Notes</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Your Specifications</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="blacktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Maecenas et auctor ex. Duis at aliquam lectus, vitae rutrum lorem.
+                                            Vivamus a tortor aliquam, finibus nisi nec, imperdiet dolor.
+                                            Fusce condimentum nulla eget tortor tincidunt ultrices.
+                                            Nullam rutrum condimentum nibh id tristique.
+                                            Duis eu massa facilisis nisl faucibus faucibus.</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Susan Sarandon's Specifications</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="blacktext">Duis aute irure dolor in reprehenderit in voluptate velit.
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.
+                                            cupidatat non proident,sunt in culpa qui officia deserunt.
+                                            mollit anim id est laborum.</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="header1">Attachments</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Your additional documents</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="zt tabs">
+                                            <div class="tab active text-center">
+                                                <div class="m-t">
+                                                    <div class="rectangle m-l-md">
+                                                        <img src="assets/images/avatars/a4.jpg" class="image">
+                                                        <img ng-show= "false" src="assets/images/icons/icon-delete.svg" class="img avatar-sm.zt.avatar m-t-n-xxxl">
+                                                    </div>
+                                                </div>
+                                                <span class="blacktext-s">Photo of my garden</span>
+                                            </div>
+                                            <div class="tab text-center">
+                                                <div class="m-t">
+                                                    <div class="rectangle m-l-md">
+                                                        <img src="assets/images/avatars/a4.jpg" class="image" style="opacity: 0.2">
+                                                        <img ng-show= "true" src="assets/images/icons/icon-delete.svg" class="img avatar-sm.zt.avatar m-t-n-xxxl">
+                                                    </div>
+                                                </div>
+                                                <span class="blacktext-s">Another photo of...</span>
+                                            </div>
+                                            <div class="tab text-center">
+                                                <div class="m-t">
+                                                    <div class="rectangle m-l-md">
+                                                        <img src="assets/images/icons/icon-pdf.svg" class="image1"><br>
+                                                        <img ng-show= "false" src="assets/images/icons/icon-delete.svg" class="img avatar-sm.zt.avatar m-t-n-xxxl">
+                                                    </div>
+                                                </div>
+                                                <span class="blacktext-s">Map and planning</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="zt tabs">
+                                            <div class="tab active text-center">
+                                                <div class="m-t">
+                                                    <img src="assets/images/icons/icon-add.svg" class="image1"><br>
+                                                    <span class="blacktext-s steps-ready">Add attachment</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Susan Sarandon's additional documents</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="zt tabs">
+                                            <div class="tab active text-center">
+                                                <div class="m-t">
+                                                    <img src="assets/images/avatars/a4.jpg" class="image"><br>
+                                                    <span class="blacktext-s">Photo of my garden</span>
+                                                </div>
+                                            </div>
+                                            <div class="tab text-center">
+                                                <div class="m-t">
+                                                    <img src="assets/images/avatars/a4.jpg" class="image"><br>
+                                                    <span class="blacktext-s">Another photo of...</span>
+                                                </div>
+                                            </div>
+                                            <div class="tab text-center">
+                                                <div class="m-t">
+                                                    <img src="assets/images/icons/icon-pdf.svg" class="image1"><br>
+                                                    <span class="blacktext-s">Map and planning</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="header1">Payment</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Options</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-5">
+                                        <span class="item-note">PAY WITH</span>
+                                    </td>
+                                    <td class="col-md-5">
+                                        <span class="item text-capitalize">Cash</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="zt table table-table issue-tracker">
+                                <thead>
+                                <tr>
+                                    <td colspan="5" class="title">Milestones</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-2">
+                                        <p><span class="zt label label-yellow">PAID</span></p>
+                                    </td>
+                                    <td class="col-md-4">
+                                        <span class="blacktext">1. Fix</span><br>
+                                        <span class="options2 m-l">01/10/2016</span>
+                                    </td>
+                                    <td class="col-md-1">
+                                    </td>
+                                    <td class="col-md-1">
+                                    </td>
+                                    <td class="col-md-1">
+                                        <span class="blacktext">$240</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-2">
+                                        <p><span class="zt label label-green">COMPLETED</span></p>
+                                    </td>
+                                    <td class="col-md-4">
+                                        <span class="blacktext">2. Build</span><br>
+                                        <span class="options2 m-l">01/20/2016</span>
+                                    </td>
+                                    <td class="col-md-1">
+                                    </td>
+                                    <td class="col-md-1">
+                                    </td>
+                                    <td class="col-md-1">
+                                        <span class="blacktext">$115</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-2">
+                                        <p><span class="zt label label-blue">STARTED</span></p>
+                                    </td>
+                                    <td class="col-md-4">
+                                        <span class="blacktext">3. Revision</span><br>
+                                        <span class="options2 m-l">01/31/2016</span>
+                                    </td>
+                                    <td class="col-md-1">
+                                        <img src="assets/images/icons/icon-halted.svg">
+                                    </td>
+                                    <td class="col-md-1">
+                                        <img src="assets/images/icons/icon-finished.svg">
+                                    </td>
+                                    <td class="col-md-1">
+                                        <span class="blacktext">$115</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-2">
+                                    </td>
+                                    <td class="col-md-4">
+                                        <span class="blacktext">4. Finish</span><br>
+                                        <span class="options2 m-l">01/31/2016</span>
+                                    </td>
+                                    <td class="col-md-1">
+
+                                    </td>
+                                    <td class="col-md-1">
+                                        <img src="assets/images/icons/icon-started.svg">
+                                    </td>
+                                    <td class="col-md-1">
+                                        <span class="blacktext">$115</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-2">
+                                    </td>
+                                    <td class="col-md-4">
+                                        <span class="titletab no-padding">Amount Total</span>
+                                    </td>
+                                    <td class="col-md-1">
+                                    </td>
+                                    <td class="col-md-1">
+                                    </td>
+                                    <td class="col-md-1">
+                                        <span class="titletab no-padding">$395</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CLAIMS -->
+                <div ng-show="currentView == 'claims'" class="ibox-content wrapper wrapper-content ">
+                </div>
+
+                <!-- MESSAGES -->
+                <div ng-show="currentView == 'messages'" class="ibox-content wrapper wrapper-content ">
+                    <div class="row wrapper white-bg">
+                        <div class="col-lg-8">
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group zt search">
+                                <input type="text" placeholder="Search jobs" class="input form-control">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn btn-primary"><i class="ezier-icon-zoom"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="options2 border-bottom m-t">FRIDAY 01/15/2016</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img alt="image" class="zt avatar avatar-md avatar-border" src="assets/images/avatars/a4.jpg" width="40px" height="40px">
+                        </div>
+                        <div class="col-md-9 no-padding">
+                            <span class="steps2 text-uppercase">Susan Sarandon</span>
+                            <span class="m-l-xs">11:25am</span>
+                            <div class="p-xs m-b rectangle-message1">
+                                <span class="blacktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                            </div>
+                            <div class="triangle-message1a"></div>
+                            <div class="triangle-message1b"></div>
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-9 no-padding">
+                            <div class="p-xs m-b rectangle-message2">
+                                <span class="blacktext">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                            </div>
+                            <div class="triangle-message2a"></div>
+                            <div class="triangle-message2b"></div>
+                        </div>
+                        <div class="col-md-2">
+                            <span class="steps2 text-uppercase">ME</span>
+                            <span class="m-l-xs">11:25am</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="options2 border-bottom m-t">TODAY</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-9 no-padding">
+                            <div class="p-xs m-b rectangle-message2">
+                                <span class="blacktext">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur.</span>
+                            </div>
+                            <div class="triangle-message2a"></div>
+                            <div class="triangle-message2b"></div>
+                        </div>
+                        <div class="col-md-2">
+                            <span class="steps2 text-uppercase">ME</span>
+                            <span class="m-l-xs">11:25am</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img alt="image" class="zt avatar avatar-md avatar-border" src="assets/images/avatars/a4.jpg" width="40px" height="40px">
+                        </div>
+                        <div class="col-md-9 no-padding">
+                            <span class="steps2 text-uppercase">Susan Sarandon</span>
+                            <span class="m-l-xs">11:25am</span>
+                            <div class="p-xs m-b rectangle-message1">
+                                <span class="blacktext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                            </div>
+                            <div class="triangle-message1a"></div>
+                            <div class="triangle-message1b"></div>
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 border-bottom m-t"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 m-b-lg m-t-md" >
+                            <div class="input-group zt search">
+                                <input type="text" placeholder="Type your message" class="input form-control">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn btn-primary">
+                                    <img src="assets/images/icons/icon-send2.svg" class="p-r-6 p-l-6">
+                                </button>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div></div></div>

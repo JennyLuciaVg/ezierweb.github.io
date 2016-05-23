@@ -1,0 +1,19 @@
+.zt.tabs{
+  .tab{
+    width: 135px;
+    height: 50px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    span{
+      vertical-align: middle;
+    }
+  }
+  .tab.active{
+    box-shadow: -1px 0 0 0 #eeeeee, 1px 0 0 0 #eeeeee, 0 -1px 0 0 #eeeeee;
+    font-weight: bold;
+  }
+}

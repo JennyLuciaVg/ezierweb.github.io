@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>check off</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Settings---Payment---Card" sketch:type="MSArtboardGroup" transform="translate(-390.000000, -329.000000)" fill="#3FD8DD">
+            <g id="check-off" sketch:type="MSLayerGroup" transform="translate(390.000000, 329.000000)">
+                <path d="M10.0484262,19.9757869 C4.60048426,19.9757869 0.169491525,15.5447942 0.169491525,10.0968523 C0.169491525,4.64891041 4.60048426,0.217917676 10.0484262,0.217917676 C15.496368,0.217917676 19.9273608,4.64891041 19.9273608,10.0968523 C19.9273608,15.5447942 15.5690073,19.9757869 10.0484262,19.9757869 L10.0484262,19.9757869 Z M10.0484262,1.38014528 C5.25423729,1.38014528 1.33171913,5.30266344 1.33171913,10.0968523 C1.33171913,14.8910412 5.25423729,18.8135593 10.0484262,18.8135593 C14.842615,18.8135593 18.7651332,14.8910412 18.7651332,10.0968523 C18.7651332,5.30266344 14.842615,1.38014528 10.0484262,1.38014528 L10.0484262,1.38014528 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <g id="Shape-+-Shape-Copy-11" transform="translate(6.779661, 7.457627)" sketch:type="MSShapeGroup">
+                    <path d="M1.94257929,2.32420691 L6.35985652,2.32420691 C6.66803865,2.32420691 6.92485709,2.58102536 6.92485709,2.88920749 C6.92485709,3.19738962 6.66803865,3.45420807 6.35985652,3.45420807 L1.94257929,3.45420807 L1.94257929,2.32420691 L1.94257929,2.32420691 Z" id="Shape"></path>
+                    <path d="M5.2134144,2.32420691 L0.796137175,2.32420691 C0.487955043,2.32420691 0.231136599,2.58102536 0.231136599,2.88920749 C0.231136599,3.19738962 0.487955043,3.45420807 0.796137175,3.45420807 L5.2134144,3.45420807 L5.2134144,2.32420691 L5.2134144,2.32420691 Z" id="Shape-Copy-11"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

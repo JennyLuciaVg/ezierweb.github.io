@@ -1,0 +1,224 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-8">
+        <h2 class="page-heading">Requests & Quotes</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li class="active">
+                <strong>Requests & Quotes</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-4 m-t-lg">
+        <div class="input-group zt search">
+            <input type="text" placeholder="Search requests" class="input form-control">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn btn-primary"><i class="ezier-icon-zoom"></i>
+                    </button>
+                </span>
+        </div>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox-content">
+                <div class="m-b">
+                    <div class="row">
+                        <div class="col-sm-12 m-b-xs">
+                            <div class="zt label-group left">
+                                <label>View: </label>
+                                <a class="zt label label-primary">All</a>
+                                <a class="zt label label-disabled">Draft</a>
+                                <a class="zt label label-disabled">Open</a>
+                                <a class="zt label label-disabled">Closed</a>
+                            </div>
+                            <div class="filter-dropdown right" dropdown>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" dropdown-toggle aria-expanded=true>
+                                    <span class="ezier-icon-filter"></span>
+                                    Refine <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="zt dropdown-menu row">
+                                    <li><h3 class="heading">FILTER REQUESTS</h3></li>
+                                    <li>
+                                        <div class="radio radio-info">
+                                            <input type="radio" name="filter" id="radio-all" checked>
+                                            <label for="radio-all">
+                                                All
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio radio-info">
+                                            <input type="radio" name="filter" id="radio-pending">
+                                            <label for="radio-pending">
+                                                Pending
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio radio-info">
+                                            <input type="radio" name="filter" id="check-sent">
+                                            <label for="check-sent">
+                                                Sent
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio radio-info">
+                                            <input type="radio" name="filter" id="check-reject">
+                                            <label for="check-reject">
+                                                Reject
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <table class="zt table table-list issue-tracker">
+                        <tbody>
+                        <tr ui-sref="index.view-request">
+                            <td class="col-md-1">
+                                <span class="zt label label-yellow">PENDING</span>
+                            </td>
+                            <td class="col-md-1">
+                                <img alt="image" class="zt avatar avatar-md avatar-border" src="assets/images/avatars/a4.jpg">
+                            </td>
+                            <td class="col-md-8">
+                                <a href="#" class="header">
+                                    Garage Door Replacement
+                                </a>
+                                <span class="sub header text-uppercase">
+                                    Keith Richards
+                                </span>
+                            </td>
+                            <td class="col-md-2">
+                                1 hour left
+                            </td>
+                            <td class="text-right col-md-1">
+                                <div class="dropdown right" dropdown>
+                                    <a class="zt show-more" dropdown-toggle>
+                                        <i class="ezier-icon-more"></i>
+                                    </a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li>
+                                        <li><a href="#">Option 3</a></li>
+                                        <li><a href="#">Option 4</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="zt label label-green">SENT</span>
+                            </td>
+                            <td>
+                                <img alt="image" class="zt avatar avatar-md avatar-border" src="assets/images/avatars/a4.jpg">
+                            </td>
+                            <td>
+                                <a href="#" class="header">
+                                    New Fence
+                                </a>
+
+                                <span class="sub header text-uppercase">
+                                    Thurston Moore
+                                </span>
+                            </td>
+                            <td>
+                                5 hours left
+                            </td>
+                            <td class="text-right">
+                                <div class="dropdown right" dropdown>
+                                    <a class="zt show-more" dropdown-toggle>
+                                        <i class="ezier-icon-more"></i>
+                                    </a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li>
+                                        <li><a href="#">Option 3</a></li>
+                                        <li><a href="#">Option 4</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="zt label label-gray">DRAFT</span>
+                            </td>
+                            <td>
+                                <img alt="image" class="zt avatar avatar-md avatar-border" src="assets/images/avatars/a4.jpg">
+                            </td>
+                            <td>
+                                <a href="#" class="header">
+                                    Japanese Garden
+                                </a>
+
+                                <span class="sub header text-uppercase">
+                                    Susan Sarandon
+                                </span>
+                            </td>
+                            <td>
+                                5 day left
+                            </td>
+                            <td class="text-right">
+                                <div class="dropdown right" dropdown>
+                                    <a class="zt show-more" dropdown-toggle>
+                                        <i class="ezier-icon-more"></i>
+                                    </a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li>
+                                        <li><a href="#">Option 3</a></li>
+                                        <li><a href="#">Option 4</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="zt label label-red">REJECTED</span>
+                            </td>
+                            <td>
+                                <img alt="image" class="zt avatar avatar-md avatar-border" src="assets/images/avatars/a4.jpg">
+                            </td>
+                            <td>
+                                <a href="#" class="header">
+                                    Foundation Repair
+                                </a>
+
+                                <span class="sub header text-uppercase">
+                                    John Boo
+                                </span>
+                            </td>
+                            <td>
+                                2 days left
+                            </td>
+                            <td class="text-right">
+
+                                <div class="dropdown right" dropdown>
+                                    <a class="zt show-more" dropdown-toggle>
+                                        <i class="ezier-icon-more"></i>
+                                    </a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#">Option 1</a></li>
+                                        <li><a href="#">Option 2</a></li>
+                                        <li><a href="#">Option 3</a></li>
+                                        <li><a href="#">Option 4</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

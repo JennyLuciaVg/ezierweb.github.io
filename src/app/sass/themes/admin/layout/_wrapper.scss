@@ -1,0 +1,12 @@
+body.fixed-nav #wrapper {
+  .navbar-static-side, #page-wrapper {
+    margin-top: 65px;
+  }
+}
+
+body.boxed-layout #wrapper {
+  background-color: $zt-secondary-color;
+  #page-wrapper {
+    background-color: white;
+  }
+}

@@ -1,0 +1,91 @@
+/*******************************
+             Labels
+*******************************/
+
+/*--------------
+     Basic
+---------------*/
+.zt.label {
+  padding: 2px 15px;
+  font-weight: 900;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-size: 11px;
+}
+
+/*--------------
+     Group
+---------------*/
+.zt.label-group {
+  padding: 5px 10px;
+
+  &.left {
+    width: 100%;
+  }
+
+  > .label {
+    font-size: 12px;
+    margin-left: 12px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+/*******************************
+          Variations
+*******************************/
+
+.zt.label {
+  &-yellow {
+    background-color: $zt-yellow;
+    color: $zt-label-text-dark-color;
+  }
+  &-gray {
+    background-color: $zt-gray;
+    color: $zt-label-text-dark-color;
+  }
+  &-white {
+    background-color: $zt-white;
+    color: $zt-label-text-dark-color;
+  }
+  &-green {
+    background-color: $zt-green;
+    color: $zt-label-text-light-color;
+  }
+  &-red {
+    background-color: $zt-red;
+    color: $zt-label-text-light-color;
+  }
+  &-orange {
+    background-color: $zt-orange;
+    color: $zt-label-text-light-color;
+  }
+  &-blue {
+    background-color: $zt-blue;
+    color: $zt-label-text-light-color;
+  }
+  &-disabled {
+    background-color: transparent;
+    color: lighten($zt-label-text-dark-color, 35%);
+
+    &:hover {
+      color: $zt-label-text-dark-color;
+    }
+  }
+}
+
+/*******************************
+             Medias
+*******************************/
+
+@media (min-width: 768px) {
+  .zt.label-group {
+
+    &.left {
+      float: left;
+      width: auto;
+    }
+  }
+}

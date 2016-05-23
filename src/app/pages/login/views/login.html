@@ -1,0 +1,40 @@
+<div id="login">
+    <div class="top">
+        <img src="assets/images/ezier-logo-large.png" alt="Ezier service marketplace">
+        <p>
+            The Marketplace that promotes service
+            excellence through credibility and reputation
+            between customers and providers
+        </p>
+    </div>
+    <form class="form-horizontal" oauth-login="ctrl.user" redirect-to="index.requests_quotes">
+        <div class="form-group">
+                <label class="control-label col-sm-3">Email</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" ng-model="ctrl.user.username">
+            </div>
+        </div>
+        <hr>
+        <div class="form-group">
+            <div class="col-sm-3">
+                <label class="control-label">Password</label>
+            </div>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" ng-model="ctrl.user.password">
+            </div>
+        </div>
+        <hr>
+        <p>
+            <button type="submit" class="btn btn-primary">
+            Sign in <img src="assets/images/icons/icon-save.svg" alt="">
+            </button>
+        </p>
+    </form>
+    <div class="bottom">
+        <p class="text-center">Or Log in using <a>Facebook</a></p>
+        <div class="row">
+            <p class="col-md-5"><a ui-sref="password-email">Forgot password?</a></p>
+            <p class="col-md-7">Do not have an account? <a ui-sref="register">Sign up</a></p>
+        </div>
+    </div>
+</div>
